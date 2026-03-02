@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #e6f2ff;
+            color: #003366;
+        }
+
+        /* MENU */
+        nav {
+            position: fixed;
+            width: 100%;
+            background-color: #b3daff;
+            padding: 15px;
+            text-align: center;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0059b3;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #b3daff, #e6f2ff);
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background-color: #66b3ff;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #3399ff;
+            transform: scale(1.05);
+        }
+
+        /* SEÇÕES */
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .projeto {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #b3daff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#formacao">Formação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- TELA INICIAL -->
+    <section class="hero">
+        <h1>Kayki Sabóia</h1>
+        <p>  Estudante |  Desenvolvimento de Sistemas | BACK-end</p>
+        <a href="#sobre" class="btn">SOBRE MIM</a>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>
+                Sou um estudante dedicado, interessado em tecnologia e desenvolvimento.
+                Busco constantemente aprender novas habilidades e evoluir profissionalmente.
+            </p>
+        </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao">
+        <div class="container">
+            <h2>Formação</h2>
+            <p>🎓 Ensino Médio - Cursando</p>
+            <p>💻 Curso de Desenvolvimento Web</p>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+
+            <div class="projeto">
+                <h3>Projeto 1</h3>
+                <p>Site institucional desenvolvido em HTML e CSS.</p>
+            </div>
+
+            <div class="projeto">
+                <h3>Projeto 2</h3>
+                <p>Aplicação simples para organização de tarefas.</p>
+            </div>
+
+            <div class="projeto">
+                <h3>Projeto 3</h3>
+                <p>Portfólio pessoal responsivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>📞 Telefone: (44) 998582933</p>
+            <p>📧 Email: kayki.saboia@escola.pr.gov.br</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 - Kayki Sabóia
+    </footer>
+
+</body>
+</html>
